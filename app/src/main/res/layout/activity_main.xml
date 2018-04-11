@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.gmail.ahmadqorib97.orderpizza.MainActivity">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="ORDER PIZZA NOW!!!! " />
+
+    <EditText
+        android:id="@+id/txtNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Masukkan nama pemesan"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Masukkan Jumlah Pesanan : " />
+
+    <EditText
+        android:id="@+id/txtJumlah"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Count"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Pilih Topping :" />
+
+    <CheckBox
+        android:id="@+id/cbV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vegetables (Rp. 5.000)" />
+
+    <CheckBox
+        android:id="@+id/cbM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meat (Rp. 10.000)" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ukuran Yang Akan DiPesan :" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Small (Rp 5.000)"
+            android:onClick="klikRB"/>
+
+        <RadioButton
+            android:id="@+id/rbMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium (Rp 7.500)"
+            android:onClick="klikRB"/>
+
+        <RadioButton
+            android:id="@+id/rbLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Large (Rp 10.000)"
+            android:onClick="klikRB"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ORDER" />
+</LinearLayout>
